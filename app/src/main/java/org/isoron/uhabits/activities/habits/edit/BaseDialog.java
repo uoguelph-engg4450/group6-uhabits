@@ -81,7 +81,7 @@ public abstract class BaseDialog extends AppCompatDialogFragment
         HabitsApplication app =
             (HabitsApplication) getContext().getApplicationContext();
 
-        appComponent = app.getComponent();
+        appComponent = app.getComponent();//comment
         prefs = appComponent.getPreferences();
         habitList = appComponent.getHabitList();
         commandRunner = appComponent.getCommandRunner();
